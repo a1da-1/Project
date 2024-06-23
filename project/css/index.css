@@ -1,0 +1,823 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    scroll-padding-top: 2rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+html::-webkit-scrollbar{
+    width: 0.3rem;
+}
+
+html::-webkit-scrollbar-track{
+    width: 0.3rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #292831;
+}
+
+a{
+    text-decoration: none;
+    color: #ded7d4;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-color: #f1f1f1;
+}
+
+nav{
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #000;
+    position: fixed;
+    width: 100%;
+
+}
+
+
+nav a.logo{
+    font-size: 33px;
+    color: #ded7d4;
+    font-weight: 600;
+}
+
+nav .links a:not(:last-child){
+    margin-right: 20px;
+}
+
+nav .login .btn{
+    padding: 8px 14px;
+    border: none;
+    cursor: pointer;
+    background-color: #ded7d4;
+    color: #000;
+    border-radius: 4px;
+    margin-right: 14px;
+    font-size: 14px;
+}
+
+nav .login .btn:hover{
+    background-color: #90A3BF;
+    color: #fff;
+}
+
+header{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+header .left{
+    width: 700px;
+}
+
+header .left h1{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 85px;
+    margin-bottom: 25px;
+    font-family: 'MuseoModerno', sans-serif;
+}
+
+header .left p{
+    font-size:17px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 20px;
+    width: 500px;
+    font-family:'Montserrat', sans-serif;
+}
+
+.left form{
+    display: flex;
+    align-items: center;
+    background: #ded7d4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 30px;
+    max-width: 620px;
+}
+
+.left form input{
+    border: 0;
+    outline: 0;
+    width: 100%;
+    background: #ded7d4;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.left form .btn{
+    background-color: #312e28;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 30px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+header img{
+    width: 500px;
+}
+
+h2.separator{
+    padding: 0 80px;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #312e28;
+}
+
+.car .img{
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.lease-car{
+    padding: 0 80px;
+    margin: 50px 0 80px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.lease-car .item,
+.car-select .car-list .item{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.lease-car .item:hover,
+.car-select .car-list .item:hover,
+.sellers .item:hover{
+    box-shadow: none;
+}
+
+.lease-car .item .header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #312e28;
+}
+
+.lease-car .item .header i{
+    font-size: 40px;
+}
+
+.lease-car .item .header h5{
+    font-size: 17px;
+}
+
+.lease-car .item p{
+    margin-top: 10px;
+    padding: 0 4px;
+    color: #312e28;
+}
+
+.lease-car .item .btn{
+    background-color: #312e28;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+.lease-car .item .btn:hover{
+    background-color: #312e2889;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.lease-car .item input{
+    background-color: #eee;
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+.car-select{
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.car-select .category{
+    display: flex;
+    gap: 14px;
+}
+
+.car-select .category a{
+    background-color: #312e28;
+    padding: 8px 14px;
+    font-size: 15px;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+
+.car-select .category a:hover{
+    color: #fff;
+    background-color: #0f2182;
+}
+
+.car-select .car-list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.car-select .car-list .item img{
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+}
+
+.car-select .car-list .item .info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edecec;
+}
+
+.car-select .car-list .item .info h5{
+    font-size: 18px;
+}
+
+.car-select .car-list .item .info .btc{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.car-select .car-list .item .btc i{
+    font-size: 22px;
+    color: #304ffe;
+}
+
+.car-select .car-list .item .btc p{
+    font-size: 12px;
+    color: #304ffe;
+}
+
+.car-select .car-list .item .info > p{
+    font-size: 12px;
+    color: #989898;
+}
+
+.car-select .car-list .item .bid{
+    padding: 14px 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-select .car-list .item .bid p,
+.car-select .car-list .item .bid a{
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    
+}
+
+.car-select .car-list .item .bid a{
+    color: #304ffe;
+    background: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.car-select .car-list .item .bid a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+
+.sellers{
+    padding: 0 80px;
+    margin: 40px 0 80px;
+    display: flex;
+    gap: 30px;
+}
+
+.sellers .item{
+    background: #fff;
+    display: flex;
+    align-items: center;
+    width: 25%;
+    gap: 14px;
+    padding: 14px;
+    border-radius: 18px;
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sellers .item img{
+    width: 64px;
+}
+
+.sellers .item .info p{
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+footer{
+    background-color: #000;
+    color: #fff;
+    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3{
+    font-size: 48px;
+}
+
+footer .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 26px;
+}
+
+footer .right .links{
+    display: flex;
+    gap: 30px;
+}
+
+footer .right .links a{
+    color: #989898;
+    transition: color 0.3s ease;
+}
+
+footer .right .links a:hover{
+    color: #fff;
+}
+
+footer .right .social{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .right .social i{
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer .right .social i:hover{
+    color: #304ffe;
+}
+
+footer .right p{
+    font-size: 13px;
+    color: #777;
+}
+
+@media screen and (max-width: 1400px) {
+    
+    nav,
+    header,
+    h2.separator,
+    .lease-car,
+    .car-list,
+    .sellers{
+        padding: 0 40px;
+    }
+
+    header .left h1{
+        font-size: 60px;
+    }
+
+    header img{
+        width: 540px;
+    }
+
+    .car-select .car-list .item img{
+        width: 220px;
+        height: 220px;
+    }
+
+    footer{
+        padding: 100px 40px;
+    }
+
+    footer h3{
+        font-size: 38px;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    
+    header .left h1{
+        font-size: 48px;
+    }
+
+    header img{
+        width: 480px;
+    }
+
+    h2.separator{
+        font-size: 34px;
+    }
+
+    .lease-car .item .header i{
+        font-size: 36px;
+    }
+
+    .lease-car .item .header h5{
+        font-size: 15px;
+    }
+
+    .lease-car .item p{
+        font-size: 13px;
+    }
+
+    .car-select .car-list{
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .car-select .car-list .item{
+        width: 48%;
+    }
+
+    .car-select .car-list .item img{
+        width: 100%;
+        height: auto;
+    }
+
+    .sellers{
+        flex-wrap: wrap;
+    }
+
+    .sellers .item{
+        width: 48%;
+    }
+
+    footer .links a{
+        font-size: 15px;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    
+    nav a.logo{
+        font-size: 28px;
+    }
+
+    nav .links a{
+        font-size: 14px;
+    }
+
+    header{
+        flex-direction: column-reverse;
+        height: auto;
+        margin-bottom: 60px;
+    }
+
+    header .left{
+        width: 100%;
+    }
+
+    header img{
+        width: 100%;
+    }
+
+    .lease-car{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .lease-car .item{
+        width: 48%;
+    }
+
+    .sellers{
+        gap: 20px;
+    }
+
+    footer{
+        flex-direction: column;
+        padding: 60px 40px;
+    }
+
+    footer h3{
+        margin-bottom: 40px;
+        font-size: 32px;
+    }
+
+    footer .right{
+        width: 100%;
+        align-items: center;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    
+    nav,
+    header,
+    h2.separator,
+    .lease-car,
+    .car-select,
+    .sellers{
+        padding: 0 20px;
+    }
+
+    nav a.logo{
+        display: none;
+    }
+
+    nav .links a{
+        font-size: 12px;
+    }
+
+    nav .login button{
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    header .left h1{
+        font-size: 36px;
+    }
+
+    header .left p{
+        font-size: 14px;
+    }
+
+    header .left a{
+        padding: 6px;
+        width: 160px;
+        font-size: 14px;
+    }
+
+    header .left a i{
+        padding: 6px;
+    }
+
+    h2.separator{
+        font-size: 30px;
+    }
+
+    footer{
+        padding: 40px 20px;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    
+    header .left h1{
+        font-size: 30px;
+    }
+
+    .lease-car .item{
+        width: 100%;
+    }
+
+    .car-select .car-list .item,
+    .sellers .item{
+        width: 47%;
+    }
+
+    .car-select .category a{
+        font-size: 13px;
+    }
+
+}
+
+/*bookings*/
+
+.carimage{
+    padding: 0 80px;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.car-selects .car-lists .item{
+    width: 420px;
+    padding: 20px;
+    background: #000;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+}
+
+.car-selects .car-lists .item:hover{
+    box-shadow: none;
+}
+
+.car-selects{
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.car-selects .car-lists{
+
+    padding: 20px 0;
+    display: flex;
+   
+    justify-content: center;
+    gap: 20px;
+}
+
+.car-selects .car-lists .item p{
+    text-align: center;
+    color: #f1f1f1;
+}
+
+.car-selects .car-lists .item h3{
+    text-align: center;
+    font-size: 17px;
+    color: #f1f1f1;
+}
+
+/*cart*/
+
+.car-selectt .car-listt .item{
+    padding: 20px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.car-selectt .car-listt .item:hover{
+    box-shadow: none;
+}
+
+.car-selectt{
+    padding: 0 80px;
+    margin-top: 30px;
+}
+
+.car-selectt .car-listt{
+    padding: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.car-selectt .car-listt .item img{
+    width: 280px;
+    height: 280px;
+    border-radius: 18px;
+}
+
+.car-selectt .car-listt .item .info{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #edecec;
+}
+
+.car-selectt .car-listt .item .info h5{
+    font-size: 18px;
+}
+
+
+.car-selectt .car-listt .item .info .btc{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.car-selectt .car-listt .item .btc i{
+    font-size: 22px;
+    color: #304ffe;
+}
+
+.car-selectt .car-listt .item .btc p{
+    font-size: 12px;
+    color: #304ffe;
+}
+
+.car-selectt .car-listt .item .info > p{
+    font-size: 12px;
+    color: #989898;
+}
+
+.car-selectt .car-listt .item .bid{
+    padding: 14px 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-selectt .car-listt .item .bid p,
+.car-selectt .car-listt .item .bid a{
+    background-color: #edecec;
+    padding: 6px 10px;
+    font-size: 13px;
+    border-radius: 10px;
+    
+}
+
+.car-selectt .car-listt .item .bid a{
+    color: #304ffe;
+    background: transparent;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.car-selectt .car-listt .item .bid a:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.car-selectt .car-listt form .btn{
+    background-color: #312e28;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
+
+.car-selectt .car-listt form .btn:hover{
+    background-color: #312e2889;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+}
